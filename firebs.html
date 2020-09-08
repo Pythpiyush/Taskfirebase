@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title> </title>
+</head>
+<body>
+<div class="container my-3">
+    <h3>User Data</h3>
+         <div class="form-group">
+            <label for="userid">UserId</label>
+            <input type="text" class="form-control" id="userid" name='userid' placeholder="userid">
+         </div>
+         <div class="form-group">
+            <label for="coursename">Coursename</label>
+            <input type="text" class="form-control" id="coursename" name='coursename' placeholder="cousrsetaken">
+         </div>
+
+         <div class="form-group">
+            <label for="fee">fee</label>
+            <input type="fee" class="form-control" id="fee" name='fee' placeholder="fee for course">
+         </div>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name='name' placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <label for="name">Email</label>
+            <input type="email" class="form-control" id="email" name='email' placeholder="Enter Your Email">
+        </div>
+        <div class="form-group">
+            <label for="name">Phone</label>
+            <input type="tel" class="form-control" id="phone" name='phone' placeholder="Enter Your Phone Number">
+         </div>
+         <div class="form-group">
+            <label for="name">Package</label>
+            <input type="text" class="form-control" id="package" name='package' placeholder="Enter Package Type">
+         </div>
+         <div class="form-group">
+            <label for="score">Score</label>
+            <input type="score" class="form-control" id="score" name='score' placeholder="Enter Scored Marks">
+         </div>
+  
+        <button type="submit" id="addBtn" class="btn btn-success">Submit</button>
+</div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCh_SzwHjRalNye_GhzIteks-2i49mptmA",
+        authDomain: "coursedetails-c3ddc.firebaseapp.com",
+        databaseURL: "https://coursedetails-c3ddc.firebaseio.com",
+        projectId: "coursedetails-c3ddc",
+        storageBucket: "coursedetails-c3ddc.appspot.com",
+        messagingSenderId: "1086667970566",
+        appId: "1:1086667970566:web:8686913522b7ae10978b87",
+        measurementId: "G-F4DTCLL92E"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
